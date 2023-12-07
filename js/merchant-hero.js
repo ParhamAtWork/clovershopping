@@ -13,6 +13,7 @@ class MerchantHero {
       mode: 'cors'
     }).then(res => res.json());
 
+
   }
 
   render() {
