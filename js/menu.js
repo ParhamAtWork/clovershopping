@@ -8,11 +8,18 @@ fetch('https://dev1.dev.clover.com/oloservice/v1/merchants/R9AHC6Q4K7PX1/menu', 
 
 class Menu {
   container;
+  #menudata
 
   constructor(container) {
     this.container = container;
-    this.render();
+    this.#loadMenu().then(() => this.render());
   }
+
+  async #loadMenu() {
+    this.#merchantData = await fetch('https://dev1.dev.clover.com/oloservice/v1/merchants/R9AHC6Q4K7PX1/menu', {
+      method: 'GET',
+      mode: 'cors'
+    }).then(res => res.json());
 
   /**
    * Create an item component and append it as a child to the container

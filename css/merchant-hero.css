@@ -1,0 +1,35 @@
+html * {
+    font-family: 'Roboto', sans-serif;
+}
+
+.image3 {
+    height: 80px;
+    margin-top: 40px;
+    margin-left: 15px;
+}
+
+.merchant-hero > div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.text-content > h1 {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px 0 0 10px;
+}
+
+.address {
+    display: flex;
+    justify-content: space-between;
+    margin: -10px 0 0 10px;
+    font-size: 12px;
+}
+
+.text-content > p {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: -10px 0 0 10px;
+    font-size: 12px;
+}
