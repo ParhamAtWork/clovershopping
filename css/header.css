@@ -1,0 +1,15 @@
+header {
+    height: 60px;
+    background-color: #280;
+    position: sticky;
+    top: 0;
+  }
+
+  .image1 {
+    margin: 15px;
+  }
+
+  .image2 {
+    margin: 15px;
+    float: right;
+  }

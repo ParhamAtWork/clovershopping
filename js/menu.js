@@ -1,3 +1,11 @@
+fetch('https://dev1.dev.clover.com/oloservice/v1/merchants/R9AHC6Q4K7PX1/menu', {
+  method: 'GET',
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch((error) => console.error('Error:', error));
+
+
 class Menu {
   container;
 
